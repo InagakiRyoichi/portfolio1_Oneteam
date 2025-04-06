@@ -1,0 +1,465 @@
+@charset "UTF-8";
+
+/*
+@font-face {
+	font-family: 'Ruska Display';
+	src: url('../logofont/RuskaDisplay.otf') format('opentype');
+}
+*/
+
+body {
+	text-align: center;
+	color: #EEEEEE;
+	background-color: #333333;
+	font-size: 20px;
+}
+/*システム名ロゴフォントログイン画面*/
+h1 {
+	font-family: 'Ruska Display', 'sans-serif ';
+	color: #DD4A33;
+	font-size: 500%;
+}
+/*システム名ロゴフォントログイン画面終わり*/
+
+
+
+/*ログイン画面テキストボックス*/
+.nice-wrap{
+  position: relative;
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+}
+  
+  &.focus{
+    top: -25px;
+    left: 5px;
+    font-size: 14px;
+    color: #3B535F;
+  }
+
+.nice-textbox{
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  margin-top: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color:#3B535F;
+  outline-color:#3B535F;
+  outline-style: solid;
+  outline-width: 2px;
+}
+/*ログイン画面テキストボックス終わり*/
+
+
+/*横並びにするためのCSS　フロートで*/
+.float_test {    
+    float:  left;               /* 横並びにする */
+    margin:  25px;               /* 要素と要素の間を開ける */
+    padding:  3px;             /* 余白指定 */
+}
+
+.left { /*右側に横並びに回り込む*/
+  float: left;
+}
+.right { /*左側に横並びに回り込む*/
+  float: right;
+}
+
+/*横並びにするためのCSS　フロートで　おわり*/
+
+/*チェックボックスの並び*/
+#textleft {
+	 text-align: left; /* ←左寄せ */
+	padding:  3px; 
+	left: 5%;
+	position: relative;
+}  
+/*チェックボックスの並びおわり*/
+
+/*スクロール窓　チーム作成ページ*/
+.scroll{
+  height: 300px;
+  width: 100%;
+  overflow: auto;
+}
+/*スクロール窓　チーム作成ページおわり*/
+
+
+
+.textcenter  { text-align: center; } /* ←中央寄せ */
+.textright     { 
+	text-align: right; /* ←右寄せ */
+	right: 8%;
+	position: relative;
+}  
+
+.float {    
+	height: auto;
+	width: 40%;
+    float:  left;               /* 横並びにする */
+    margin:  10px;               /* 要素と要素の間を開ける */
+    padding:  3px;             /* 余白指定 */
+}
+
+
+
+/*短めテキストボックス*/
+
+.nice-textboxshort {
+	position: relative;
+	display: inline-block;
+	width: 250px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	color:#3B535F;
+	outline-color:#3B535F;
+	outline-style: solid;
+	outline-width: 2px;
+	margin: 1%;
+}
+
+/*短めテキストボックスおわり*/
+
+/*テキストエリア*/
+
+textarea {
+  width: 500px;
+  height: 300px;
+}
+
+.nice-textarea {
+	position: relative;
+	display: inline-block;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	color:#3B535F;
+	outline-color:#3B535F;
+	outline-style: solid;
+	outline-width: 2px;
+	margin: 1%;
+}
+
+/*テキストエリアおわり*/
+
+#charCount {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+/*検索ボタン*/
+#sbtn2{
+	padding: 6px;
+  width:50px;
+  border-radius: 7px;
+  border: #FFFFDD;
+  color: #666666;
+  font-size:20px;
+  cursor: pointer;
+}
+#sbtn2:hover{
+background: #CCCCCC;
+color: #FFFFDD;
+}
+
+/*検索ボタンおわり*/
+
+/* ------------------ヘッダー部分ここから--------------------- */
+/*ヘッダー固定ロゴフォント*/
+.logo {
+	font-family: 'Ruska Display', 'sans-serif ';
+	color: #DCDCDC;
+	font-size: 80px;
+	font-weight: bold;
+	height: 100px;
+	width: 800px;
+}
+/*ヘッダー固定ロゴフォントおわり*/
+
+/*aメニューバーボタン*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 55%;
+  font-family: 'Ruska Display', 'sans-serif ';
+}
+
+
+.btn,
+button.btn {
+
+  font-weight: 800;
+  line-height: 2.0;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #FFFFDD;
+  border-radius: 0.5rem;
+}
+
+.btn-malformation {
+  font-size: 2rem;
+
+  padding: 3rem 4rem;
+ text-decoration: none;
+  color: #fff;
+  border-radius: 100% 80px / 80px 100%;
+  background-color: #666666;
+}
+
+.btn-malformation:hover {
+  color: #fff;
+  border-radius: 60% 80% / 100% 80%;
+}
+/*aメニューバーボタンおわり*/
+
+/*メニューバー配置*/
+
+.box-wrp {
+	width: 100%;
+	height: 10%;
+	position: relative;
+}
+
+/*配置左*/
+.box1 {
+  position: absolute;
+  left: 2%;
+}
+/*配置右*/
+.box2 {
+  position: absolute;
+  right: 2%;
+}
+/*配置上寄せ中央*/
+.box3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+
+
+/*メニューバー配置おわり*/
+
+/* ------------------ヘッダー部分ここまで--------------------- */
+
+
+/*テーブルフラット*/
+.flat-table {
+  display: inline-block;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 115%;
+  overflow: auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flat-table th {
+  background-color: #666666;
+  color: white;
+  font-weight: normal;
+  padding: 15px 20px;
+  text-align: center;
+}
+.flat-table td {
+  /*background-color:#333333;*/
+  padding: 20px 30px;
+  overflow: hidden;          /* 溢れた部分を隠す */
+  text-overflow: ellipsis;   /* 溢れた部分を「...」にする */
+  white-space: nowrap; 
+  border-bottom: solid 1px #EEEEEE;
+  word-wrap: normal;
+}
+/*テーブルフラットおわり*/
+
+/*テーブルフラットタスク確認ページ用*/
+.checktask-table {
+  display: inline-table;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 115%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+}
+
+
+.checktask-table th {
+  background-color: #666666;
+  color: white;
+  font-weight: normal;
+  padding: 15px 20px;
+  text-align: center;
+  width: 20%;
+}
+.checktask-table td {
+  /*background-color:#FFFFDD;*/
+  padding: 20px 30px;
+ 
+  border-bottom: solid 1px #EEEEEE;
+  text-align: left;
+  word-wrap: break-word;
+ }
+/*テーブルフラットタスク確認ページ用おわり*/
+
+/*ボタン左から色変わる*/
+.btn_23 {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	width: auto;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border: 2px solid #BBBBBB;
+	color: #BBBBBB;
+	cursor: pointer;
+	position: relative;
+ 	overflow: hidden;
+ 	z-index: 1;
+}
+.btn_23::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #BBBBBB;
+	transform: translateX(-100%);
+	transition: all .3s;
+	z-index: -1;
+}
+.btn_23:hover::before {
+	transform: translateX(0);
+}
+.btn_23:hover {
+	color: #fff;
+}
+/*ボタン左から色変わるおわり*/
+
+/*ボタンの初期プロパティをリセット*/
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+  text-decoration: none;
+}
+/*ボタンの初期プロパティをリセットおわり*/
+
+/*リンクテキストホバーで下線*/
+.cp_link {
+  position: relative;
+  padding: 5px;
+  display: inline-block;
+  /*transition: .3s;
+  color: #3B535F;*/
+  text-decoration: none;/*元々のアンダーラインを非表示にしておく*/
+}
+/*hover時の表示*/
+.cp_link::before,
+.cp_link::after {
+  position: absolute;
+  bottom: 0;
+  content: '';
+  transition: all 0.3s ease;
+}
+/*hover前の表示（背景塗りつぶし）*/
+.cp_link:before {
+  right: 50%;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  border-radius: 3px;
+ background-color: #BBBBBB ;
+  opacity: 0.3;
+}
+/*hover時の表示（背景塗りつぶし）*/
+.cp_link:hover:before {
+  left: 0;
+  width: 100%;
+}
+/*hover前の表示（ライン）*/
+.cp_link::after {
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 1px #DD4A33;
+  border-bottom: 1px #DD4A33;
+}
+/*hover時の表示（ライン）真ん中を起点に消える*/
+.cp_link:hover::after {
+  right: 50%;
+  left: 50%;
+  width: 0%;
+}
+
+/*リンクテキストホバーで下線おわり*/
+
+/*トップチーム一覧ボタンの間隔あける*/
+.space {
+  padding: 4px;
+  display: inline-block;
+}
+/*トップチーム一覧ボタンの間隔あける*/
+
+/* ------------------フッター部分ここから--------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/*menuバーインクルード直後～footer直前まで囲む*/
+main { 
+	padding-top: 60px; 
+	padding-bottom: 150px; 
+	height: auto; 
+	font-family: メイリオ; 
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #DCDCDC;
+  color: #333333;
+  z-index:10000;
+}
+
+/* ------------------フッター部分ここまで--------------------- */
